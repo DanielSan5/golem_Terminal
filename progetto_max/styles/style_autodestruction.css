@@ -20,6 +20,7 @@ h1 {
 
 /* CSS per il contenitore */
 body {
+    overflow: hidden;
     text-align: center;
     background-color: #0a0a0a;
     padding: 20px;
@@ -38,46 +39,21 @@ body {
     font-family: 'Orbitron', sans-serif;
 }
 
-/* CSS per il form */
-.input-group {
-    display: flex;
-    justify-content: center; /* Allinea al centro verticalmente */
-    align-items: center; /* Allinea al centro orizzontalmente */
-    margin: 40px 0;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Orbitron', sans-serif;
-    letter-spacing: 2.5px;
-}
-
-label {
-    color: #fff;
-    flex: 1;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Orbitron', sans-serif;
-}
-
-input[type="password"] {
-    flex: 1;
-    padding: 10px;
-    border: 2px solid #bbaf02;
-    color: #000;
-    font-size: 0.9em;
-    border-radius: 5px;
-    width: 100%;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Orbitron', sans-serif;
-    letter-spacing: 2.5px;
-}
-
 /* Stile per il testo "- E" tra i campi di input */
 .input-divider {
-    color: #fff;
-    font-size: 2.5em;
+    background-color: #ffffff;
+    color: #bbaf02;
+    font-size: 1.5em;
     font-weight: bold;
     margin: 10px; 
-    padding: 20px; 
+    padding: 10px; 
     font-family: 'Montserrat', sans-serif;
     font-family: 'Orbitron', sans-serif;
+    animation-duration: 1.5s; /* don't forget to set a duration! */
+}
+.button-container {
+    display: flex;
+    align-items: center; /* Allinea verticalmente il testo e i pulsanti */
 }
 
 /* Stile per la "- E" di input-divider */
@@ -86,13 +62,18 @@ input[type="password"] {
     margin-top: -1.5em; /* Spostamento verso l'alto per allinearlo sotto la "L" di "GOLEM" */
     font-family: 'Montserrat', sans-serif;
     font-family: 'Orbitron', sans-serif;
+    display: inline-block; /* Imposta l'elemento su una riga */
 }
 
 button {
     transition: transform 0.3s, box-shadow 0.3s; /* Aggiunta della transizione per transform e box-shadow */
+    display: inline-block; /* Imposta anche i pulsanti su una riga */
+    margin-top: 20px; /* Aggiunge uno spazio tra i pulsanti e l'elemento sopra */
+    margin-left: 30px; /* Aggiunge uno spazio tra i pulsanti (verso sinistra) */
+    margin-right: 30px; /* Aggiunge uno spazio tra i pulsanti (verso destra)*/
     background-color: #bbaf02;
     color: #fff;
-    font-size: 1em; /* Aumenta la dimensione del titolo del doppio */
+    font-size: 1em; /* Aumenta la dimensione del doppio */
     font-weight: bold;
     letter-spacing: 2.5px;
     border: none;

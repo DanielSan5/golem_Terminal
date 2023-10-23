@@ -8,30 +8,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Orbitron&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="..\styles\style_index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <script src="..\scripts\script_index.js"></script> <!-- Includi il file JavaScript esterno -->
+
+    <link rel="stylesheet" href="..\styles\style_autodestruction.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="..\scripts\script_autodestruction.js"></script> <!-- Includi il file JavaScript esterno -->
 
     <title>GOLEM TERMINAL</title>
 
-        <h1>GOLEM</h1>
-        <h2 id="sub-heading">Terminal</h2>
+        <h1 class="animate__animated animate__fadeInDownBig">GOLEM</h1>
+        <h2 id="sub-heading" class="animate__animated animate__fadeInDownBig">Terminal</h2>
 
 </head>
 <body>
 
-                <form method="POST">
-                    
-                    
-
-                </form>
-
-                    <p id="error-message"></p>
-
-                <audio id="error_audio" style="display: none">
-                    <source src="..\files\audio\error_sound.mp3" type="audio/mpeg">
-                </audio>
+    <span class="input-divider animate__animated animate__fadeInUpBig" >ACTIVATE AUTODESTRUCTION?</span>
+      
+    <div class="button_container">
+        <button class="animate__animated animate__fadeInLeftBig" type="submit" id="submit_yes">YES</button>
+        <button class="animate__animated animate__fadeInRightBig" type="submit" id="submit_no">NO</button>
+    </div>
+ 
+    <p id="error-message"></p>
 
 </body>
 </html>
