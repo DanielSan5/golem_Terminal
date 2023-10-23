@@ -1,18 +1,18 @@
 /* CSS per il titolo */
 h1 {
-    color: #e0dc00;
+    color: #bbaf02;
     text-align: center;
-    font-size: 4em; /* Aumenta la dimensione del titolo del doppio */
+    font-size: 4em; 
     font-weight: bold;
-    margin-top: 50px; /* Aggiunge margine dalla parte superiore */
+    margin-top: 50px; 
     font-family: 'Montserrat', sans-serif;
     font-family: 'Orbitron', sans-serif;
     font-variant: inherit;
 }
 #sub-heading {
-    margin-top: 0; /* Puoi regolare il valore del margine come preferisci */
-    color: #e0dc00;
-    font-size: 2.5em; /* Aumenta la dimensione del titolo del doppio */
+    margin-top: 0; 
+    color: #bbaf02;
+    font-size: 2.5em; 
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Orbitron', sans-serif;
@@ -59,7 +59,9 @@ label {
 input[type="password"] {
     flex: 1;
     padding: 10px;
-    border: 2px solid #e0dc00;
+    border: 2px solid #bbaf02;
+    color: #000;
+    font-size: 0.9em;
     border-radius: 5px;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
@@ -87,7 +89,7 @@ input[type="password"] {
 }
 
 button {
-    background-color: #e0dc00;
+    background-color: #bbaf02;
     color: #fff;
     font-size: 1em; /* Aumenta la dimensione del titolo del doppio */
     font-weight: bold;
@@ -101,10 +103,11 @@ button {
 }
 
 button:hover {
-    background-color: #e0dc00;
+    background-color: #bbaf02;
 }
 
 /* Stile per il messaggio di errore */
 #error-message {
+    display: none; /* Nasconde inizialmente il messaggio */
     color: #ff0000;
 }
