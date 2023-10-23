@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 setTimeout(function() {
                     document.getElementById("error-message").style.display = "none";
                     document.getElementById("error-message").textContent = "";
-                }, 1300); // 1000 millisecondi = 1 secondo
+                }, 1500); // 1000 millisecondi = 1 secondo
         }
 
     })

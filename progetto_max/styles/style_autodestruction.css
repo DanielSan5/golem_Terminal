@@ -39,7 +39,6 @@ body {
     font-family: 'Orbitron', sans-serif;
 }
 
-/* Stile per il testo "- E" tra i campi di input */
 .input-divider {
     background-color: #ffffff;
     color: #bbaf02;
@@ -56,10 +55,9 @@ body {
     align-items: center; /* Allinea verticalmente il testo e i pulsanti */
 }
 
-/* Stile per la "- E" di input-divider */
 .input-divider span {
     display: block;
-    margin-top: -1.5em; /* Spostamento verso l'alto per allinearlo sotto la "L" di "GOLEM" */
+    margin-top: -1.5em; 
     font-family: 'Montserrat', sans-serif;
     font-family: 'Orbitron', sans-serif;
     display: inline-block; /* Imposta l'elemento su una riga */
