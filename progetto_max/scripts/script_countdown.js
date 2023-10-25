@@ -5,12 +5,6 @@
 
 document.addEventListener('DOMContentLoaded', function() {
 
-    var elemento_DOM = document.getElementById('countdown');
-    const cifre_conto = ['.. ten ..','.. nine ..','.. eight ..','.. seven ..','.. six ..','.. five ..','.. four ..','.. three ..','.. two ..','.. one ..'];
-    
-    for(var i=0; i<cifre_conto.length; i++){
-        elemento_DOM.textContent = cifre_conto[i];
-        
-    }
+
 
 })

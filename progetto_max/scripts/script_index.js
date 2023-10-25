@@ -14,7 +14,25 @@ document.addEventListener('DOMContentLoaded', function() {
                 setTimeout(function() {
                     window.location = "autodestruction.html";
                 }, 500); // 1000 millisecondi = 1 secondo
-            }
+            }else{
+
+                document.getElementById('error-message').textContent = "Le password NON sono corrette";
+           
+                // Svuota i campi delle password
+                document.getElementById("password_uno").value = "";
+                document.getElementById("password_due").value = "";
+
+                document.getElementById("error_audio").play();   
+                
+                // Mostra il messaggio
+                document.getElementById("error-message").style.display = "block";
+
+                    setTimeout(function() {
+                        document.getElementById("error-message").style.display = "none";
+                        document.getElementById("error-message").textContent = "";
+                    }, 1500); // 1000 millisecondi = 1 secondo
+
+                }
        }else{
             document.getElementById('error-message').textContent = "Le password NON sono corrette";
            
