@@ -15,13 +15,13 @@
 
     <title>GOLEM TERMINAL</title>
 
-        <h1 class="animate__animated animate__fadeInDownBig">GOLEM</h1>
+        <h1 id="sub_title" class="animate__animated animate__fadeInDownBig">GOLEM</h1>
         <h2 id="sub-heading" class="animate__animated animate__fadeInDownBig">Terminal</h2>
 
 </head>
 <body>
 
-    <span class="input-divider animate__animated animate__fadeInUpBig" >ACTIVATE AUTODESTRUCTION?</span>
+    <span id="autodistruzione" class="input-divider animate__animated animate__fadeInUpBig" >ACTIVATE AUTODESTRUCTION?</span>
       
     <div class="button_container">
         <button class="animate__animated animate__fadeInLeftBig" type="submit" id="submit_yes">YES</button>
@@ -41,8 +41,33 @@
     Tasto YES -- non funziona
     Tasto No -- funziona
             Il tasto NO ti porta ad una pagina statica nera (magari con disegno)
-            Parte la risata malefica e successivamente il countdown per l'autodistruzione
+            Parte il countdown per l'autodistruzione
     -->
+
+<!-- Audio dell'allarme 1 -->    
+    <audio id="danger_audio" style="display: none">
+        <source src="..\files\audio\danger_sound.mp3" type="audio/mpeg">
+    </audio>
+
+<!-- Audio dell'allarme 2 -->    
+    <audio id="danger_audio1" style="display: none">
+        <source src="..\files\audio\danger_sound.mp3" type="audio/mpeg">
+    </audio>
+
+<!-- Audio dell'allarme 3 -->
+    <audio id="danger_audio2" style="display: none">
+        <source src="..\files\audio\danger_sound.mp3" type="audio/mpeg">
+    </audio>
+
+<!-- Audio del countdown -->
+    <audio id="countdown" style="display: none">
+        <source src="..\files\audio\countdown.mp3" type="audio/mpeg">
+    </audio>
+
+<!-- Audio dell'esplosione -->
+    <audio id="explosion" style="display: none">
+        <source src="..\files\audio\explosion.mp3" type="audio/mpeg">
+    </audio>
 
 </body>
 </html>
