@@ -21,6 +21,8 @@
 </head>
 <body>
 
+
+
     <span id="autodistruzione" class="input-divider animate__animated animate__fadeInUpBig" >ACTIVATE AUTODESTRUCTION?</span>
       
     <div class="button_container">
@@ -69,7 +71,7 @@
     <img id="gif_warning" src="..\files\gif\matrix.gif" style = "display: none;">
 
     <!-- Immagini del countdown -->  
-    <img id="immagine" src="..\files\images\danger.jpg">
+    <img id="immagine">
 
 
 <!-- Audio dell'esplosione -->
@@ -77,11 +79,21 @@
         <source src="..\files\audio\explosion.mp3" type="audio/mpeg">
     </audio>
 
+    <video id="flash_video" style="display: none">
+        <source src="..\files\video\flash.mp4" type="video/mp4">
+    </video>
+
      <!-- Immagini desplosione -->  
      <img id="explosion_img" class="animate__animated animate__bounceIn" src="..\files\images\explosion_png.png" style = "display: none;">
 
      <!-- Immagini vittoria -->  
-     <img id="victory" src="..\files\images\drone_destroyed.png" style = "display: none;">
+     <img id="victory_first" src="..\files\images\drone_destroyed.png" style = "display: none;">
+
+     <!-- seconda img vittoria -->  
+     <img id="victory_second" src="..\files\images\you_won.jpg" style = "display: none;">
+
+
+
 
 </body>
 </html>

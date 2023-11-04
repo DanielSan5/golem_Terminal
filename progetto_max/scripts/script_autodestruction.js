@@ -105,13 +105,19 @@ immagine_cd.style.display = "none"; //OSCURO L'IMMAGINE
                         document.getElementById("countdown").addEventListener("ended", function(){
                             immagine_cd.style.display = "none";
                             document.getElementById("explosion_sound").play();
-                            document.body.style.backgroundColor = "#ffffff";
-                            document.getElementById("explosion_img").style.display = "block";
+                           // document.body.style.backgroundColor = "#ffffff";
+                           // document.getElementById("explosion_img").style.display = "block";
+
+                            document.getElementById("flash_video").style.display = "block";
+                            document.getElementById("flash_video").play();
+                            
                         });
 
                         document.getElementById("explosion_sound").addEventListener("ended", function(){
-                            document.getElementById("explosion_img").style.display = "none";
-                            document.getElementById("victory").style.display = "block";
+                           // document.getElementById("explosion_img").style.display = "none";
+                           // document.getElementById("victory_first").style.display = "block";
+                           document.getElementById("flash_video").style.display = "none";
+                           document.getElementById("victory_second").style.display = "block";
                         })
 
                     }, 200); // 1000 millisecondi = 1 secondo
@@ -126,4 +132,3 @@ immagine_cd.style.display = "none"; //OSCURO L'IMMAGINE
     })
 
 })
-
