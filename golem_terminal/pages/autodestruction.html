@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Orbitron&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="..\styles\style_autodestruction.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="..\scripts\script_autodestruction.js"></script> <!-- Includi il file JavaScript esterno -->
+
+    <title>GOLEM TERMINAL</title>
+
+        <h1 id="sub_title" class="animate__animated animate__fadeInDownBig">GOLEM</h1>
+        <h2 id="sub-heading" class="animate__animated animate__fadeInDownBig">Terminal</h2>
+
+</head>
+<body>
+
+
+
+    <span id="autodistruzione" class="input-divider animate__animated animate__fadeInUpBig" >ACTIVATE AUTODESTRUCTION?</span>
+      
+    <div class="button_container">
+        <button class="animate__animated animate__fadeInLeftBig" type="submit" id="submit_yes">YES</button>
+        <button class="animate__animated animate__fadeInRightBig" type="submit" id="submit_no">NO</button>
+    </div>
+
+    <audio id="locked_door_audio" style="display: none">
+        <source src="..\files\audio\locked_door.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="unlocked_door_audio" style="display: none">
+        <source src="..\files\audio\unlocked_door.mp3" type="audio/mpeg">
+    </audio>
+    <!-- Aggiungere eventuale sound di sottofondo -->
+
+    <!-- Idea iniziale 
+    Tasto YES -- non funziona
+    Tasto No -- funziona
+            Il tasto NO ti porta ad una pagina statica nera (magari con disegno)
+            Parte il countdown per l'autodistruzione
+    -->
+
+<!-- Audio dell'allarme 1 -->    
+    <audio id="danger_audio" style="display: none">
+        <source src="..\files\audio\danger_sound.mp3" type="audio/mpeg">
+    </audio>
+
+<!-- Audio dell'allarme 2 -->    
+    <audio id="danger_audio1" style="display: none">
+        <source src="..\files\audio\danger_sound.mp3" type="audio/mpeg">
+    </audio>
+
+<!-- Audio dell'allarme 3 -->
+    <audio id="danger_audio2" style="display: none">
+        <source src="..\files\audio\danger_sound.mp3" type="audio/mpeg">
+    </audio>
+
+<!-- Audio del countdown -->
+    <audio id="countdown" style="display: none">
+        <source src="..\files\audio\countdown.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!-- Immagini del warning -->  
+    <img id="gif_warning" src="..\files\gif\matrix.gif" style = "display: none;">
+
+    <!-- Immagini del countdown -->  
+    <img id="immagine">
+
+
+<!-- Audio dell'esplosione -->
+    <audio id="explosion_sound" style="display: none">
+        <source src="..\files\audio\explosion.mp3" type="audio/mpeg">
+    </audio>
+
+    <video id="flash_video" style="display: none">
+        <source src="..\files\video\flash.mp4" type="video/mp4">
+    </video>
+
+     <!-- Immagini desplosione -->  
+     <img id="explosion_img" class="animate__animated animate__bounceIn" src="..\files\images\explosion_png.png" style = "display: none;">
+
+     <!-- Immagini vittoria -->  
+     <img id="victory_first" src="..\files\images\drone_destroyed.png" style = "display: none;">
+
+     <!-- seconda img vittoria -->  
+     <img id="victory_second" src="..\files\images\you_won.jpg" style = "display: none;">
+
+
+
+
+</body>
+</html>

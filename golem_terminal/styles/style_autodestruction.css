@@ -1,0 +1,116 @@
+/* CSS per il titolo */
+h1 {
+    color: #bbaf02;
+    text-align: center;
+    font-size: 4em; 
+    font-weight: bold;
+    margin-top: 50px; 
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    font-variant: inherit;
+}
+#sub-heading {
+    margin-top: 0; 
+    color: #bbaf02;
+    font-size: 2.5em; 
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* CSS per il contenitore */
+body {
+    overflow: hidden;
+    text-align: center;
+    background-color: #0a0a0a;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Allinea al centro verticalmente */
+    align-items: center; /* Allinea al centro orizzontalmente */
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.input-divider {
+    background-color: #ffffff;
+    color: #bbaf02;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px; 
+    padding: 10px; 
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    animation-duration: 1.5s; /* don't forget to set a duration! */
+}
+.button-container {
+    display: flex;
+    align-items: center; /* Allinea verticalmente il testo e i pulsanti */
+}
+
+.input-divider span {
+    display: block;
+    margin-top: -1.5em; 
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    display: inline-block; /* Imposta l'elemento su una riga */
+}
+
+button {
+    transition: transform 0.3s, box-shadow 0.3s; /* Aggiunta della transizione per transform e box-shadow */
+    display: inline-block; /* Imposta anche i pulsanti su una riga */
+    margin-top: 20px; /* Aggiunge uno spazio tra i pulsanti e l'elemento sopra */
+    margin-left: 30px; /* Aggiunge uno spazio tra i pulsanti (verso sinistra) */
+    margin-right: 30px; /* Aggiunge uno spazio tra i pulsanti (verso destra)*/
+    background-color: #bbaf02;
+    color: #fff;
+    font-size: 1em; /* Aumenta la dimensione del doppio */
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+}
+
+button:hover {
+    background-color: white;
+    color: #bbaf02;
+    transform: scale(1.1); /* Ingrandisce il pulsante al passaggio del cursore */
+    box-shadow: 0 0 0 2px #bbaf02; /* Aggiunge uno "spazio" simulato intorno al pulsante */
+}
+
+#gif_warning {
+    position: fixed;  /* Posizionamento fisso rispetto alla finestra del browser */
+    top: 0;
+    left: 0;
+    width: 100%;     /* Larghezza al 100% dello schermo */
+    height: 100%;    /* Altezza al 100% dello schermo */
+}
+
+#flash_video {
+    width: 105%;
+    height: 105%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#victory_second {
+    width: 105%;
+    height: 105%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
